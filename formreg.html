@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/Admin/Desktop/project/website_files/LIC%20corporation.html -->
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>STUDENT REGISTRATION FORM</title>
+    <style>
+	    table,th,td{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        .center{
+            color:blue;
+        }
+		.logo{
+            
+            float:left;
+            margin-top: 0px;    
+        }
+        .fieldset{
+            margin-right:250px;
+            margin-left:250px;
+            background-color:white;
+        }
+        body{
+            background-color:lemonchiffon;
+        }
+        
+    </style>
+</head>
+
+<body>
+	<form action="file:///C:/action_page.php" target="_blank">
+		<fieldset class="fieldset">
+			<legend>
+                <h1 style="color:black">
+                    ADMISSION
+                </h1>
+            </legend>
+			<div style="width:100%">
+                <div class="center">
+                    <img class="logo" src="logoT.jpg" alt="Logo" height="80" width="80">
+                    <p ><em><strong><u><center>STUDENT REGISTRATION FORM</center></u></strong></em></p> 
+                    <p><i><center>Trinity Academy</center></i></p><br>
+                </div>
+                <br><hr>
+            </div>
+				<p><centre><b><i>Kindly fill the required details</i></b></centre></p><br>
+				First name:
+				    <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+				<label for="lname" autocomplete="on">Last name:</label>
+					<input type="text" id="lname" name="lname"><br><br>
+				<label for="password" autocomplete="off">Password:</label>
+					<input type="password" id="pwd" name="pwd" maxlength="6" required=""><br><br>
+				<label for="email">Mail id:</label>
+					<input type="email" id="email" name="email"><br><br>
+				<label for="number">Phone number</label>
+					<input type="tel" id="number" name="number" placeholder="0123456789" pattern="[0-9]{10}"><br><br>
+				Select Your gender:
+					<input type="radio" id="Male" name="gender" value="Male">Male
+					<input type="radio" id="Female" name="gender" value="Female">Female
+					<input type="radio" id="Transgender" name="gender" value="Transgender">Transgender
+					<br><br>
+				<label for="birthdate">Date of Birth:</label>
+					<input type="date" id="birthdate" name="birthdate" min="1979-12-31" max="2050-01-02" required=""> (DOB after 01/01/1980 and before 01/01/2050 are accepted)<br><br>
+				Select the age group in which you belong too:
+					<select id="age" name="age">
+						<option value="&lt;18">&lt;18</option>
+						<option value="18">18</option>
+						<option value="&gt;18">&gt;18</option>
+					</select><br><br>
+				Select your community:
+					<input list="community" name="community">
+				<datalist id="community">
+					<option value="General"></option>
+                    <option value="OBC"></option>
+                    <option value="SC/ST"></option>
+                </datalist><br><br>
+
+				<label for="datetime">Fill the date and time of enrollment</label>
+					<input type="datetime-local" id="datetime" name="datetime"><br><br>
+					<input type="button" onclick="alert(Submitted)" value="SUBMIT">
+				    <input type="reset" value="RESET"><br><br>
+				<label for="myfile">Upload the necessary documents</label>
+					<input type="file" id="file" name="file"><br><br>
+				<label for="no_of_doc">No. of documents uploaded</label>
+					<input type="number" id="no_of_doc" name="no_of_doc" min="1" max="5" multiple=""><br><br>
+					
+		    <table cellpadding="5" cellspacing="3">
+				<tbody>
+                    <tr>
+						<th colspan="5">LIC</th>
+					</tr>
+					<tr>
+                        <th rowspan="4">Policies</th>
+                    </tr>
+					<tr>
+						<th>S.No</th>
+						<th>Terms of Policy</th>
+						<th>Amount (@end of an year)</th>
+						<th>Years</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Short term</td>
+						<td> <5 lakhs </td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Long term</td>
+						<td>>5 lakhs</td>
+						<td>4</td>
+					</tr>
+				</tbody>
+            </table><br>
+					
+					Note:<br>
+					    <input type="checkbox" id="confirm" name="confirm">I hereby declare the above information furnished by me are true.<br><br>
+					    <input type="radio" id="agree" name="confirm">I agree
+					    <input type="radio" id="notagree" name="confirm">Not agreed<br><br>
+					Feedback:<br>
+					    <textarea name="feedback" rows="5" cols="100">					
+                        </textarea>
+			
+		</fieldset>
+	</form>
+</body>
+</html>

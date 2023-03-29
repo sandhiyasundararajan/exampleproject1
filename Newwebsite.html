@@ -6,36 +6,44 @@
             SCHOOL WEBSITE
         </title>
         <meta name="viewport" width="device-width">
-    <style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+      
+
+        
+
+        <style>
         body{
             margin:0;
+            padding:2%;
         }
         .header{
-            background-color:red;
+            background-color:brown;
             padding:20px;
             text-align:center;
-            color:white;
+            color:black;
             font-size:35px;
             font-family:Times New Roman;
             font-weight:bolder;
+            
         }
         
         .topnav{
             overflow:hidden;
-            background-color:aqua;
+            background-color:darkslategrey;
             font-weight:bolder;
             word-spacing: 20px;
         }
         .topnav a{
             float:right;
-            color:mediumvioletred;
+            color:whitesmoke;
             text-align: center;
             display: block;
-            padding:10px;
+            padding:15px;
         }
         .topnav a:hover{
-            background-color:blue;
-            color:white;
+            
+            color:blue;
         }
        
         @media screen and (max-width:600px)
@@ -50,29 +58,134 @@
             margin-left: 30px;
             float: left;
         }
+        img{
+            float:right;
+        }
         
-    </style>
+        .middle{
+            font-size: 40px ;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-style:normal;
+            font-weight: 700;
+            margin-left:160px;
+            color:blueviolet;
+            padding-top: 10px;
+        }
+        .regis{
+            font-size: 30px ;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 500;
+            margin-left:400px;
+            padding-top:60px ;
+        }
+        .regis a{
+            color:black;
+        }
+        .regis a:hover{
+            color:crimson;
+        }
+        .body{
+            background-color:khaki;
+        }
+        .margin{
+            font-size:25px; 
+            padding:10px;
+        }
+        .footer{
+            padding: 40px;
+            background-color:grey;
+            margin-top: 200px;
+        }
+
+        .column{
+          /* padding:15px; */
+          width:33.33%;
+          float:left;
+        }
+        .row::after{
+          content:"";
+          display:table;
+          clear:both;
+        }
+        
+        @media screen and (max-width:600px)
+        {.column
+            {width:100%;}
+
+        }
+       
+        
+        *{box-sizing:border-box;}
+        
+        p.border{
+            background-color: cornsilk;
+            border:2px dotted black;
+            padding:5px;
+            box-sizing:border-box;
+            width:95%;
+            margin:50px auto;
+            outline-style:groove;
+            outline-color:cornflowerblue;
+            outline-width:4px;
+            outline-offset:15px;
+            white-space: nowrap;
+        }
+        
+
+        </style>
 </head>
 
-<body>
-
-    <div>
-        <div class="logo">
-            <img src="LOGO K.jpg" alt="logo" width="100px"  height="100px">
-        </div>
-
-        <div class="header">
-            <p> THE KANAVU SCHOOL OF ENGLISH</p>
-        </div>
+<fieldset><body>
+    <div class="logo">
+        <img src="logoT.jpg" alt="logo" width="100px"  height="100px">
     </div>
 
+    <div class="header">
+        <p class="font-effect-shadow-multiple"> TRINITY COLLEGE FOR WOMEN</p>
+     </div>
+
+
+<div class="body">
     <div class="topnav">
         <a href="login.html">Login</a>
         <a href="#Aboutus">Aboutus</a>
         <a href="#Academics">Academics</a>
-        <a href="#Admission">Admission</a>
+        <a href="formreg.html">Studentform</a>
         <a href="#Courses">Courses</a>
         <a href="#Home">Home</a>
     </div>
+        <img src="girl.jpg" alt="girl with book" style="width:450px; height:350px; padding-top:20px;">
+        <p class="middle">Trinity Academy Welcomes you</p>
+        <p class="regis"><a href="regis.html"><b>Register here</b></a></p><br><br><br>
+    <div  class="margin">
+        <p class="border">It was started in the year 2000 by Trinity Academy Charitable Trust with the aim of imparting higher education to <br> women in general and women belonging to economically weaker sections of the society in and around Namakkal.<br> Knowledge is power is the soul motto of our college.
+            The college aims to install 'Discipline, Education and Service'<br> by creating an abode of carrier. It endeavours to provide the environment and opportunities that are necessary for <br> the development of integrated personality of the girls which help them grow in faith and love with due emphasis on <br> traditional values and progressive ideas.</p>
+    </div>
+    <div class="footer">
+        <div class="row">
+
+            <div class="column">
+              <h2 style="color:white">Address</h2>
+              <p style="font-size:large"><b>Trinity Women's College,<br> Mohanur Road, Sanyasikkaradu Post,<br> Namakkal, <br>Tamil Nadu 637002</b></p>
+            </div>
+            
+            <div class="column">
+              <h2 style="color:white">Contact</h2>
+              <p> <i class="fa-solid fa-phone"></i> 9988234512</p>
+              <p><i class="fa-solid fa-envelope"></i> trinity@gmail.com</p>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <div class="column">
+                <h2 style="color:white">Location</h2>
+                <img style=margin-right:200px; src="location.PNG" alt="map" width="220px" height="180px"></p>
+                
+            </div>
+        </div>
+    </div>
 </body>
+</fieldset>
 </html> 
